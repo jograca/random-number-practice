@@ -1,0 +1,24 @@
+/* CSS Sample File */
+
+/* Targeting an Element by Name */
+body {
+	font-family: Verdana;
+}
+h4 {
+	color: Blue;
+}
+
+/* Targeting an Element by Class */
+.form {
+	color: blue; 
+    font-weight: bold;
+}
+.dog {
+	height: 25%;
+	width: 25%;
+}
+
+/* Targeting an element by ID */
+#button {
+	color: blue;
+}

@@ -6,14 +6,10 @@ public class RandomNumber {
 
 	private int result;
 	
-	public void calculateRandomNumber(int min, int max) {
+	public void calculateRandomNumber(int max) {
 		
 		Random rn = new Random();
-		result = rn.nextInt((max - min + 1) + min);
-	}
-	
-	public void clearRandomNumber() {
-		result = 0;
+		result = rn.nextInt(max);
 	}
 	
 	public int getResult() {

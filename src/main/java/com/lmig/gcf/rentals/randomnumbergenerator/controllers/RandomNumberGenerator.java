@@ -28,13 +28,11 @@ public class RandomNumberGenerator {
 
 	// Request Mapping for Generating Random Number
 	@RequestMapping("/random")
-	public ModelAndView showRandomNumberPage(int min, int max) {
+	public ModelAndView showRandomNumberPage(int max) {
 
-		if (min > 0 && max <= 10) {
-			rn.calculateRandomNumber(min, max);
-			System.out.println("Min Number: " + min + " Max Number: " + max + " Result: " + rn.getResult());
-		} else {
-			rn.clearRandomNumber();
+		if (max > 0) {
+			rn.calculateRandomNumber(max);
+			System.out.println("Max Number: " + max + " Result: " + rn.getResult());
 		}
 
 		ModelAndView mv = new ModelAndView();

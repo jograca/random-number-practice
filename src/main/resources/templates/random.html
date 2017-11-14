@@ -4,20 +4,24 @@
 <meta charset="UTF-8">
 <title>Random Number Generator</title>
 </head>
-<link rel=StyleSheet href="/app.css" type="text/css">
+<link rel=stylesheet href="/style/app.css" type="text/css">
 <body>
-	<h4>Get a Random Number</h4>
-	<h5>Between 1 and 10</h5>
+	<h4>Fetch a Random Number</h4>
+	<h5>Between 0 and "Max"</h5>
 
-	<form method="post" action="/random">
-	
-	Min: <input type="number" name="min" required>
-	Max: <input type="number" name="max" required>
+	<img src=/images/doggie.jpg alt="golden retreiver" class="dog">
 	
 	<br>
 	<br>
 	
-		<button>Random Number</button>
+	<form method="post" action="/random" class="form">
+	
+	Max: <input type="number" name="max" value="10" required>
+	
+	<br>
+	<br>
+	
+		<button id="button">Random Number</button>
 
 	</form>
 	<br>
