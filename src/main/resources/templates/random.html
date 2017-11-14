@@ -6,31 +6,29 @@
 </head>
 <link rel=stylesheet href="/style/app.css" type="text/css">
 <body>
-	<h4>Fetch a Random Number</h4>
+	<h4>
+		<span id="random_header">Fetch</span> a Random Number
+	</h4>
 	<h5>Between 0 and "Max"</h5>
 
 	<img src=/images/doggie.jpg alt="golden retreiver" class="dog">
-	
+
 	<br>
 	<br>
-	
+
 	<form method="post" action="/random" class="form">
-	
-	Max: <input type="number" name="max" value="10" required>
-	
-	<br>
-	<br>
-	
+
+		Max: <input type="number" name="max" value="10" required> <br>
+		<br>
+
 		<button id="button">Random Number</button>
 
 	</form>
-	<br>
+	<br> {{#rn}} Your Random Number is: {{ rn.getResult }} {{/rn}}
 
-	{{#rn}}
-	
-		Your Random Number is: {{ rn.getResult }}
-	
-	{{/rn}}
+	<br>
+	<br>
+	<a href="http://nhspca.org/" target="_blank">Go to the NHSPCA Site</a>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 /* Targeting an Element by Name */
 body {
 	font-family: Verdana;
+	text-align: center;
 }
 h4 {
 	color: Blue;
@@ -21,4 +22,7 @@ h4 {
 /* Targeting an element by ID */
 #button {
 	color: blue;
+}
+#random_header {
+	text-transform: uppercase;
 }

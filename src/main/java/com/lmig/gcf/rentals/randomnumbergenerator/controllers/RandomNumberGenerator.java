@@ -40,4 +40,5 @@ public class RandomNumberGenerator {
 		mv.addObject("rn", rn);
 		return mv;
 	}
+	
 }
