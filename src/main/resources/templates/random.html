@@ -7,12 +7,26 @@
 <link rel=StyleSheet href="/app.css" type="text/css">
 <body>
 	<h4>Get a Random Number</h4>
+	<h5>Between 1 and 10</h5>
 
 	<form method="post" action="/random">
-
+	
+	Min: <input type="number" name="min" required>
+	Max: <input type="number" name="max" required>
+	
+	<br>
+	<br>
+	
 		<button>Random Number</button>
 
 	</form>
+	<br>
+
+	{{#rn}}
+	
+		Your Random Number is: {{ rn.getResult }}
+	
+	{{/rn}}
 
 </body>
 </html>
