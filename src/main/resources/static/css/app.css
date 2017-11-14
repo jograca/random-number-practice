@@ -5,13 +5,14 @@ body {
 	font-family: Verdana;
 	text-align: center;
 }
-h4 {
-	color: Blue;
+h4, .dog {
+	color: #ae6325;
+;
 }
 
 /* Targeting an Element by Class */
 .form {
-	color: blue; 
+	color: #ae6325;
     font-weight: bold;
 }
 .dog {
@@ -21,7 +22,8 @@ h4 {
 
 /* Targeting an element by ID */
 #button {
-	color: blue;
+	color: #ae6325;
+	font-weight: bold;
 }
 #random_header {
 	text-transform: uppercase;
