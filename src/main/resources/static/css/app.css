@@ -4,8 +4,9 @@
 body {
 	font-family: Verdana;
 	text-align: center;
+	border-style: solid;
 }
-h4, .dog {
+h4 {
 	color: #ae6325;
 ;
 }
@@ -15,7 +16,10 @@ h4, .dog {
 	color: #ae6325;
     font-weight: bold;
 }
-.dog {
+.capitalize{
+	text-transform: uppercase;
+}
+#dog {
 	height: 25%;
 	width: 25%;
 }
@@ -24,7 +28,6 @@ h4, .dog {
 #button {
 	color: #ae6325;
 	font-weight: bold;
-}
-#random_header {
-	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
 }
